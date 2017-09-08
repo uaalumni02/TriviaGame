@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Trivial Trivia</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+
+<body>
+    <div id="container">
+        <img src="http://yellowhammernews.com/wp-content/uploads/2016/03/Alabama-football-Obama-White-House.png">
+        <h1>Totally Trivial Trivia!!</h1>
+        <br>
+        <button class="thebuttons" id="start-button">Roll Tide</button>
+        <br>
+        <br>
+        <div id="questionnaire">
+            <div class="counting-down" id="time-remaining">Time Remaining: <span class="counting-down" id="timer"></span> Seconds</div>
+            <br>
+            <div id="question-1">
+                <h3>Alabama has won a total of 14 National Football Championships?</h3>             
+                <input type="radio" class="q-one" value="wrong" name="q1">True
+                <input type="radio" class="q-one" value="correct" name="q1">False
+            </div>
+            <br>
+            <div id="question-2">
+                <h3>The University of Alabama is located in Tuscaloosa, Al?</h3>
+                <input type="radio" class="q-two" value="correct" name="q2">True
+                <input type="radio" class="q-two" value="wrong" name="q2">False
+            </div>
+            <br>
+            <div id="question-3">
+                <h3>The University of Alabama has had 2 Heisman Trophy Winners?</h3>
+                <input type="radio" class="q-three" value="correct" name="q3">True
+                <input type="radio" class="q-three" value="wrong" name="q3">False
+            </div>
+            <br>
+            <div id="question-4">
+                <h3>The Iron Bowl changes locations each year?</h3>
+                <input type="radio" class="q-four" value="corrct" name="q4">True
+                <input type="radio" class="q-four" value="wrong" name="q4">False
+            </div>
+            <br>
+            <div id="question-5">
+                <h3>Kirby Smart is currently the head football coach?</h3>
+                <input type="radio" class="q-five" value="wrong" name="q5">True
+                <input type="radio" class="q-five" value="correct" name="q5">False
+            </div>
+            <br>
+            <div id="question-6">
+                <h3>Alabama's biggest rival is UGA?</h3>
+                <input type="radio" class="q-six" value="wrong" name="q6">True
+                <input type="radio" class="q-six" value="correct" name="q6">False
+            </div>
+            <br>
+            <br>
+            <button class="thebuttons" id="done-button">Done</button>
+        </div>
+        <div id="results-page">
+            <h2>All Done!</h2>
+            <br>
+            <p>Correct Answers: <span id="correct-score"></span></p>
+            <p>Incorrect Answers: <span id="incorrect-score"></span></p>
+            <p>Unanswered: <span id="unanswered-score"></span></p>
+        </div>
+    </div>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.js"></script>
+    <script type="text/javascript" src="assets/javascript/app.js"></script>
+
+</body>
+
+</html>
